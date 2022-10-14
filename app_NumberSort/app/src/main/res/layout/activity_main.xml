@@ -8,37 +8,115 @@
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="335dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="133dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="362dp"
+        android:layout_height="345dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="240dp"
+        android:id="@+id/btnConfirmar"
+        android:layout_width="122dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="alterarTexto"
         android:text="Confirmar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/btnLimpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="141dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="limparTexto"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnConfirmar"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="62dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="42dp"
+        android:text="Nome:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtMultiLine"
+        app:layout_constraintEnd_toStartOf="@+id/txtNome"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:text="Cancelar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <EditText
+        android:id="@+id/txtMultiLine"
+        android:layout_width="367dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/txtNome"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:text="Nº Sorteado:"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpar"
+        app:layout_constraintEnd_toStartOf="@+id/txtValorSorteado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMultiLine" />
+
+    <EditText
+        android:id="@+id/txtValorSorteado"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="87dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
