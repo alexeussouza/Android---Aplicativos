@@ -11,4 +11,6 @@
     <string name="Pause" />
     <string name="Serie_Episodio" />
     <string name="Titulo_Seriado" />
+    <string name="tempoInicial">01:30</string>
+    <string name="tempoFinal">45:03</string>
 </resources>
