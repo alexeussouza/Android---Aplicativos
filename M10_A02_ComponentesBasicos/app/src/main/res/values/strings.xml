@@ -6,4 +6,8 @@
     <string name="Enviar">Enviar</string>
     <string name="Resultado">Resultado</string>
     <string name="Limpar">Limpar</string>
+    <string name="CoresPainel">Cores do Painel</string>
+    <string name="Verde">Verde</string>
+    <string name="Branco">Branco</string>
+    <string name="Vermelho">Vermelho</string>
 </resources>
