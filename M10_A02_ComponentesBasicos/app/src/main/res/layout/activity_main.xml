@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/id_txt_Nome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/DigiteSeuNome"
+        android:inputType="textPersonName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/DigiteSeuEmail" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_Enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="exibirDados"
+        android:text="@string/Enviar" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="limparDados"
+        android:text="@string/Limpar" />
+
+    <TextView
+        android:id="@+id/id_txt_Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Resultado"
+        android:textSize="20sp" />
+
+</LinearLayout>
