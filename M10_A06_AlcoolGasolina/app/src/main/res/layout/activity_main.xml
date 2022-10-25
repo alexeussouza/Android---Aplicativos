@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/id_img_AlcoolGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="ImagemAlcoolGasolina"
+        android:paddingTop="48dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/opcao" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/precoAlcool"
+        tools:text="@string/precoAlcool" />
+
+    <EditText
+        android:id="@+id/id_txt_precoAlcool"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="0.00"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/precoGasolina"
+        tools:text="@string/precogasolina1" />
+
+    <EditText
+        android:id="@+id/id_txt_PrecoGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="0.00"
+        android:inputType="number|numberDecimal"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/id_btn_Calcular"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:onClick="calcularCombustivel"
+        android:text="@string/Calcular" />
+
+    <TextView
+        android:id="@+id/id_txt_Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/melhoropcao"
+        android:textAlignment="center" />
+</LinearLayout>

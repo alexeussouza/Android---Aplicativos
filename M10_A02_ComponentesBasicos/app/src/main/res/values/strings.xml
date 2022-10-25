@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ComponentesBasicos</string>
+    <string name="Nome">Nome</string>
+    <string name="DigiteSeuNome">Digite seu nome</string>
+    <string name="DigiteSeuEmail">Digite seu email</string>
+    <string name="Enviar">Enviar</string>
+    <string name="Resultado">Resultado</string>
+    <string name="Limpar">Limpar</string>
+    <string name="CoresPainel">Cores do Painel</string>
+    <string name="Verde">Verde</string>
+    <string name="Branco">Branco</string>
+    <string name="Vermelho">Vermelho</string>
+</resources>

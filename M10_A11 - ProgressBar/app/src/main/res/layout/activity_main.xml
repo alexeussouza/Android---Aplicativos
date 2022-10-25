@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/id_progressbarHorizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="1" />
+
+    <ProgressBar
+        android:id="@+id/id_progressBarCircular"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="1" />
+
+    <Button
+        android:id="@+id/id_btn_carregar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="carregarProgressbar"
+        android:text="Carregar" />
+</LinearLayout>
