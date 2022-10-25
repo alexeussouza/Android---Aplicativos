@@ -1,0 +1,34 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable padrao
+drawable papel
+drawable pedra
+drawable tesoura
+id id_btn_EscolhaApp
+id id_btn_papel
+id id_btn_pedra
+id id_btn_tesoura
+id id_txt_Escolha
+id lbEscolhaDoApp
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string EscolhaDoApp
+string EscolhaOpcaoAbaixo
+string Papel
+string Pedra
+string ResultadoDoJogo
+string Tesoura
+string app_name
+style Theme.PedraPapelOuTesoura
+xml backup_rules
+xml data_extraction_rules
