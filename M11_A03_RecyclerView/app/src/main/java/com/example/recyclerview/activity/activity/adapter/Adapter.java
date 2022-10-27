@@ -51,6 +51,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         TextView ano;
         TextView genero;
 
+        TextView titulo;
+        TextView ano;
+        TextView genero;
+
         public MyViewHolder(@NonNull View itemView) {
 
             super(itemView);
