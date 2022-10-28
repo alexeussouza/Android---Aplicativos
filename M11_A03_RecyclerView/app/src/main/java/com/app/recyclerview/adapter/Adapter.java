@@ -1,16 +1,13 @@
-package com.example.recyclerview.activity.activity.adapter;
+package com.app.recyclerview.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.recyclerview.R;
-import com.example.recyclerview.activity.activity.model.Filme;
-
+import com.app.recyclerview.R;
+import com.app.recyclerview.model.Filme;
 import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
@@ -18,6 +15,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
   private List<Filme> listaFilmes;
 
     public Adapter(List <Filme> lista) {
+
         listaFilmes = lista;
     }
 
@@ -51,11 +49,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         TextView ano;
         TextView genero;
 
-        TextView titulo;
-        TextView ano;
-        TextView genero;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(View itemView) {
 
             super(itemView);
 
@@ -64,6 +59,4 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
             genero = itemView.findViewById(R.id.id_genero);
         }
     }
-
-
 }

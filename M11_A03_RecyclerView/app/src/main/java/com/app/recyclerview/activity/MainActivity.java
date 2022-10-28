@@ -1,22 +1,20 @@
-package com.example.recyclerview.activity.activity.activity;
+package com.app.recyclerview.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.recyclerview.R;
-import com.example.recyclerview.activity.activity.ClickListener;
-import com.example.recyclerview.activity.activity.adapter.Adapter;
-import com.example.recyclerview.activity.activity.model.Filme;
+import com.app.recyclerview.RecyclerItemClickListener;
+import com.app.recyclerview.model.Filme;
+import com.app.recyclerview.adapter.Adapter;
+import com.app.recyclerview.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +22,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private List<Filme>  listaFilme= new ArrayList<>();
+    private List<Filme>  listaFilme = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,20 +37,21 @@ public class MainActivity extends AppCompatActivity {
         //Configurar adaptar
         Adapter adapter = new Adapter(listaFilme);
 
-        //Configurar RecyclerView
+
+        // Configurar Recyclerview
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setHasFixedSize(true); // server para otimizar o RecyclerView
+        recyclerView.setHasFixedSize(true); // server para otimizar o RecyclerView que terá tamanho fixo
         recyclerView.addItemDecoration(
                 new DividerItemDecoration(this, LinearLayout.VERTICAL)); // Decora as tabelas com linha vertical
         recyclerView.setAdapter(adapter);
 
         // Recupera Evento de click na lista
         recyclerView.addOnItemTouchListener(
-                new ClickListener(
+                new RecyclerItemClickListener(
                         getApplicationContext(),
                         recyclerView,
-                        new ClickListener.OnItemClickListener() {
+                        new RecyclerItemClickListener.OnItemClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
                                 Filme filme = listaFilme.get(position);
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                                         getApplicationContext(),
                                         filme.getTitulo() + " - " + filme.getAno() + "-" + filme.getGenero(),
                                         Toast.LENGTH_SHORT
-                                );
+                                ).show();
                             }
 
                             @Override
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                                         getApplicationContext(),
                                         "Clique longo",
                                         Toast.LENGTH_SHORT
-                                );
+                                ).show();
                             }
 
                             @Override
@@ -79,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                                         getApplicationContext(),
                                         "Clique curto",
                                         Toast.LENGTH_SHORT
-                                );
+                                ).show();
                             }
                         }
                 )

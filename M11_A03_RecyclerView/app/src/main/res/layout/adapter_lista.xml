@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
@@ -7,20 +8,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <TextView
-<<<<<<< HEAD
             android:id="@+id/id_titulo"
-=======
-            android:id="@+id/textView3"
->>>>>>> f338305118432eb5086befbe4fe50f8b2c080197
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:text="Titulo"
-<<<<<<< HEAD
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -28,7 +23,6 @@
             android:id="@+id/id_ano"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Ano" />
 
     </LinearLayout>
@@ -38,23 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Genero"
-        android:textSize="14sp" />
-=======
-            android:textSize="18sp"
-            android:textStyle="bold" />
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ano" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Genero" />
->>>>>>> f338305118432eb5086befbe4fe50f8b2c080197
 </LinearLayout>

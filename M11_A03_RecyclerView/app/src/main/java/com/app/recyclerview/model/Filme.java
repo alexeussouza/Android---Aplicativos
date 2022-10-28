@@ -1,4 +1,4 @@
-package com.example.recyclerview.activity.activity.model;
+package com.app.recyclerview.model;
 
 public class Filme {
     private  String titulo;
