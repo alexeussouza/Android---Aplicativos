@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/id_btnNoticias"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="noticias"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/id_btnRevistasManuais"
+        app:layout_constraintTop_toBottomOf="@+id/id_btnCredenciados"
+        app:srcCompat="@drawable/noticias"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnCredenciados"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="176dp"
+        android:onClick="credenciados"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/credenciados"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnCarteirinha"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="176dp"
+        android:onClick="carteirinha"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/id_btnCredenciados"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carteirinha"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnAlarmes"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:onClick="alarmes"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_btnRevistasManuais"
+        app:srcCompat="@drawable/alarmes"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnRevistasManuais"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:onClick="revistas"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_btnCredenciados"
+        app:srcCompat="@drawable/revistas"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnPrescricoes"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="prescricoes"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/id_btnAlarmes"
+        app:layout_constraintTop_toBottomOf="@+id/id_btnRevistasManuais"
+        app:srcCompat="@drawable/prescricoes"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnTelemedicina"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="teleMedicina"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_btnPrescricoes"
+        app:layout_constraintTop_toBottomOf="@+id/id_btnRevistasManuais"
+        app:srcCompat="@drawable/telemedicina"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnContatos"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="contatos"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_btnNoticias"
+        app:layout_constraintTop_toBottomOf="@+id/id_btnCredenciados"
+        app:srcCompat="@drawable/contatos"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/id_btnAtualizacaoCadastral"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="cadastro"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/id_btnCarteirinha"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cadastro"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
